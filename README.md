@@ -49,11 +49,17 @@ with the above mentioned dataset. We had a testing set containing 9 samples whic
 
 The accuracies obtained by the machine learning models were : 
 Naive Bayes Accuracy Score ->  77.77777777777779
+
 SVM Accuracy Score ->  77.77777777777779
+
 Random Forest Accuracy Score ->  33.33333333333333
+
 KNN Accuracy Score ->  11.11111111111111
+
 Logistic Regression Accuracy Score ->  88.88888888888889
+
 Neural Network Accuracy Score ->  77.77777777777779
+
 
 
 **Future Work**
