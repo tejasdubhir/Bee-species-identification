@@ -17,11 +17,17 @@ We eventually prepared a sample dataset containing 102 species of bees and their
 
 **Dataset Preprocessing:**
 The obtained text descriptions of the species were then preprocessed using the following steps:
+
 Tokenization: the string containing the text was broken down into smaller strings by the space character (‘ ‘). Then the obtained description was stored in an array.  
+
 Lower casing: the words in the array were then converted to the lowercase in order to maintain uniformity among the words which were the same but differed in their capitalisation. For instance, “NorthWestern”, “Northwestern”, and “northwestern”. 
+
 Remove extra spaces: the extra space between words needed to be removed as it could have led to confusion in subsequent processes (ex: whether the white space character is a part of the word or not). We felt that this could also later help us in bi-gram indexing, which is a future aspect of this project.
+
 Remove stop-words: irrelevant words which do not add to the meaning of the sentence (such as: the, a, then, etc.) had to be removed so that only the meaningful keywords remain in the dataset. 
+
 Lemmatization: the remaining words were then converted to their root form. This means that words like ‘pollinated’, and  ‘pollinating’ were represented by one word - ‘pollinate’ - and hence were considered the same.
+
 
 **Ranks Prediction:**
 In order to create a predicted rank list, we applied three ranking algorithms to the list of queries and merged them all into one, to finally return the top 15 most likely species. The three rank lists are individually made by raw TF-IDF extraction, binary TF-IDF extraction and log-normalized TF-IDF extraction.
